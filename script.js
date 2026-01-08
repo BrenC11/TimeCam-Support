@@ -1,7 +1,7 @@
 // Minimal JavaScript for the support site.
 // Customize these values for your real Support URL deployment.
 
-const SUPPORT_EMAIL = "support@example.com";
+const SUPPORT_EMAIL = "support@timecam.ai";
 
 function setTextIfPresent(id, text) {
   const el = document.getElementById(id);
@@ -19,7 +19,7 @@ function main() {
   // Support email fields.
   setTextIfPresent("supportEmailText", SUPPORT_EMAIL);
   setTextIfPresent("supportEmailText2", SUPPORT_EMAIL);
-  setHrefIfPresent("contactEmailLink", `mailto:${SUPPORT_EMAIL}?subject=${encodeURIComponent("TimeCam AI Support")}`);
+  setHrefIfPresent("contactEmailLink", `mailto:${SUPPORT_EMAIL}?subject=${encodeURIComponent("TimeCam Support")}`);
 }
 
 main();

@@ -1,6 +1,6 @@
-## TimeCam AI — Support Site (GitHub Pages)
+## TimeCam Support (GitHub Pages)
 
-This folder is a small static website intended for your App Store Connect **Support URL** (and Privacy URL).
+This repo is a small static website intended for your App Store Connect **Support URL** (and Privacy URL).
 
 ### Quick setup (GitHub Pages)
 
@@ -16,9 +16,9 @@ This folder is a small static website intended for your App Store Connect **Supp
 ### What to edit
 
 - **Support email**
-  - Edit `docs/script.js` and change `SUPPORT_EMAIL`.
+  - Edit `script.js` and change `SUPPORT_EMAIL`.
 - **Privacy policy text**
-  - Edit `docs/privacy.html`.
+  - Edit `privacy.html`.
 
 ### URLs to paste into App Store Connect
 
