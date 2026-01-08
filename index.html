@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>TimeCam AI — Support</title>
+    <meta name="description" content="TimeCam AI Support: help, FAQs, contact, and troubleshooting." />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="icon" href="./favicon.ico" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="brand">
+          <div class="brand-mark" aria-hidden="true">⏳</div>
+          <div class="brand-text">
+            <div class="brand-name">TimeCam AI</div>
+            <div class="brand-sub">Support</div>
+          </div>
+        </div>
+        <nav class="nav">
+          <a href="./index.html" class="nav-link is-active">Support</a>
+          <a href="./privacy.html" class="nav-link">Privacy</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="hero">
+        <h1>Support</h1>
+        <p class="muted">
+          Get help with TimeCam AI, subscriptions, credits, and troubleshooting.
+        </p>
+        <div class="hero-actions">
+          <a class="button" id="contactEmailLink" href="#">Email Support</a>
+          <a class="button secondary" href="#faq">FAQs</a>
+        </div>
+        <p class="fineprint muted">
+          Support email: <span class="mono" id="supportEmailText">support@example.com</span>
+        </p>
+      </section>
+
+      <section class="card-grid">
+        <article class="card">
+          <h2>Billing & subscriptions</h2>
+          <ul class="list">
+            <li>Subscriptions are managed by Apple (App Store).</li>
+            <li>To cancel: iPhone Settings → Apple ID → Subscriptions.</li>
+            <li>Top-ups are one-time purchases.</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h2>Credits</h2>
+          <ul class="list">
+            <li>Credits are used to generate images and videos.</li>
+            <li>Use your coupon code in the Credits screen to redeem test credits (if provided).</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h2>Common issues</h2>
+          <ul class="list">
+            <li>If purchases aren’t showing, confirm you’re signed into the App Store and have network connectivity.</li>
+            <li>If credits don’t update, open Credits → refresh balance.</li>
+          </ul>
+        </article>
+      </section>
+
+      <section id="faq" class="section">
+        <h2>FAQs</h2>
+
+        <details class="faq">
+          <summary>My subscriptions/top-ups don’t appear in the app.</summary>
+          <div class="faq-body">
+            <p>
+              This is usually caused by App Store Connect products still being in Draft,
+              a mismatch between product IDs, or testing on simulator without StoreKit config.
+            </p>
+          </div>
+        </details>
+
+        <details class="faq">
+          <summary>I purchased but didn’t receive credits.</summary>
+          <div class="faq-body">
+            <p>
+              Please wait a moment and tap “Refresh balance”. If it still doesn’t update, email support with:
+            </p>
+            <ul class="list">
+              <li>Your Account ID (shown in Credits)</li>
+              <li>Time of purchase</li>
+              <li>Product purchased (Starter/Creator/Pro or top-up amount)</li>
+            </ul>
+          </div>
+        </details>
+
+        <details class="faq">
+          <summary>How do I request deletion of my data?</summary>
+          <div class="faq-body">
+            <p>Email support and we’ll help. See the Privacy page for details.</p>
+          </div>
+        </details>
+      </section>
+
+      <section class="section">
+        <h2>Contact</h2>
+        <p class="muted">
+          Email is the fastest way to reach us. Please include your Account ID and device model/iOS version if relevant.
+        </p>
+        <div class="card">
+          <p><strong>Email:</strong> <span class="mono" id="supportEmailText2">support@example.com</span></p>
+          <p class="muted">
+            <strong>Business hours:</strong> Mon–Fri (we reply as quickly as possible).
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <span class="muted">© <span id="year"></span> TimeCam AI</span>
+        <span class="muted">
+          <a href="./privacy.html">Privacy</a>
+        </span>
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
+

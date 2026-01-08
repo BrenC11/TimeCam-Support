@@ -1,0 +1,148 @@
+:root {
+  --bg: #0b0f17;
+  --card: rgba(255, 255, 255, 0.06);
+  --stroke: rgba(255, 255, 255, 0.10);
+  --text: rgba(255, 255, 255, 0.92);
+  --muted: rgba(255, 255, 255, 0.70);
+  --accent: #5dd6ff;
+  --accent2: #ffb84a;
+  --shadow: 0 12px 40px rgba(0, 0, 0, 0.35);
+  --radius: 16px;
+}
+
+* { box-sizing: border-box; }
+html, body { height: 100%; }
+body {
+  margin: 0;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  color: var(--text);
+  background:
+    radial-gradient(1200px 800px at 20% 10%, rgba(93, 214, 255, 0.18), transparent 60%),
+    radial-gradient(900px 700px at 85% 20%, rgba(255, 184, 74, 0.16), transparent 55%),
+    radial-gradient(900px 900px at 50% 85%, rgba(160, 110, 255, 0.10), transparent 60%),
+    var(--bg);
+}
+
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.container {
+  width: min(980px, calc(100% - 32px));
+  margin: 0 auto;
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  backdrop-filter: blur(10px);
+  background: rgba(11, 15, 23, 0.55);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  z-index: 50;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 0;
+  gap: 16px;
+}
+
+.brand { display: flex; align-items: center; gap: 12px; }
+.brand-mark {
+  width: 40px; height: 40px;
+  display: grid; place-items: center;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  box-shadow: var(--shadow);
+}
+.brand-name { font-weight: 800; letter-spacing: 0.2px; }
+.brand-sub { font-size: 12px; color: var(--muted); margin-top: 2px; }
+
+.nav { display: flex; gap: 10px; flex-wrap: wrap; }
+.nav-link {
+  padding: 8px 10px;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  color: var(--text);
+}
+.nav-link:hover { text-decoration: none; border-color: rgba(255,255,255,0.14); background: rgba(255,255,255,0.05); }
+.nav-link.is-active { border-color: rgba(255,255,255,0.20); background: rgba(255,255,255,0.06); }
+
+.hero {
+  padding: 28px 0 18px;
+}
+.hero h1 { margin: 0 0 8px; font-size: 34px; letter-spacing: -0.5px; }
+.muted { color: var(--muted); }
+.fineprint { font-size: 12px; margin-top: 10px; }
+.mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+
+.hero-actions { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 14px; }
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 14px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: rgba(255, 255, 255, 0.10);
+  color: var(--text);
+  box-shadow: var(--shadow);
+}
+.button:hover { text-decoration: none; transform: translateY(-1px); }
+.button.secondary { background: rgba(93, 214, 255, 0.10); border-color: rgba(93, 214, 255, 0.22); }
+
+.section { padding: 14px 0; }
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  padding: 10px 0 4px;
+}
+@media (max-width: 900px) {
+  .card-grid { grid-template-columns: 1fr; }
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--stroke);
+  border-radius: var(--radius);
+  padding: 14px;
+  box-shadow: var(--shadow);
+}
+
+.card h2 { margin: 0 0 10px; font-size: 16px; }
+
+.list { margin: 0; padding-left: 18px; color: var(--muted); }
+.list li { margin: 6px 0; }
+
+.faq {
+  background: var(--card);
+  border: 1px solid var(--stroke);
+  border-radius: var(--radius);
+  padding: 10px 12px;
+  margin: 10px 0;
+}
+.faq summary {
+  cursor: pointer;
+  font-weight: 650;
+}
+.faq-body { margin-top: 8px; color: var(--muted); }
+
+.site-footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  margin-top: 22px;
+  padding: 16px 0;
+  background: rgba(0, 0, 0, 0.10);
+}
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  font-size: 13px;
+}
+
