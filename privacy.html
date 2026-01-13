@@ -16,21 +16,22 @@
   <body>
     <header class="site-header">
       <div class="container header-inner">
-        <div class="brand">
+        <a class="brand" href="./index.html" aria-label="TimeCam home">
           <img class="brand-logo" src="images/TimeCamTextLOGO.png" alt="TimeCam" />
-          <div class="brand-text">
-            <div class="brand-sub">Privacy</div>
-          </div>
-        </div>
+          <span class="brand-name">TimeCam</span>
+        </a>
         <nav class="nav">
-          <a href="./index.html" class="nav-link">Support</a>
+          <a href="./index.html" class="nav-link">Home</a>
+          <a href="./support.html" class="nav-link">Support</a>
           <a href="./privacy.html" class="nav-link is-active">Privacy</a>
         </nav>
+        <a class="button nav-cta" href="https://apps.apple.com">Download on the App Store</a>
       </div>
     </header>
 
     <main class="container">
-      <section class="hero">
+      <section class="hero compact">
+        <p class="eyebrow">Privacy</p>
         <h1>Privacy Policy for TimeCam</h1>
         <p class="fineprint muted">
           Effective Date: <span id="lastUpdated">[Insert date]</span>
@@ -56,7 +57,7 @@
           and the content of your message. This information is used only to respond to your enquiry.
         </p>
 
-        <h3>b. User Content (Photos &amp; Media)</h3>
+        <h3>b. User Content (Photos and Media)</h3>
         <ul class="list">
           <li>TimeCam allows users to upload images or media for processing.</li>
           <li>Uploaded images are used solely to perform the requested function.</li>
@@ -169,10 +170,15 @@
 
     <footer class="site-footer">
       <div class="container footer-inner">
-        <span class="muted">© <span id="year"></span> TimeCam</span>
-        <span class="muted">
-          <a href="./index.html">Support</a>
-        </span>
+        <div>
+          <span class="brand-name">TimeCam</span>
+          <p class="muted">Support: <a href="mailto:support@timecam.ai">support@timecam.ai</a></p>
+        </div>
+        <div class="footer-links">
+          <a href="./support.html">Support</a>
+          <a href="./index.html">Home</a>
+        </div>
+        <div class="muted">© <span id="year"></span> TimeCam</div>
       </div>
     </footer>
 

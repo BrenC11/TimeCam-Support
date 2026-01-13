@@ -3,8 +3,11 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>TimeCam Support</title>
-    <meta name="description" content="TimeCam Support: help, FAQs, contact, and troubleshooting." />
+    <title>TimeCam — Witness the past in the present</title>
+    <meta
+      name="description"
+      content="TimeCam is a cinematic iOS camera that reimagines any place across time. Explore eras, compare before and after, and share your discoveries."
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,120 +18,297 @@
     <link rel="icon" href="./favicon.ico" />
   </head>
   <body>
+    <!-- Sticky navigation -->
     <header class="site-header">
       <div class="container header-inner">
-        <div class="brand">
+        <a class="brand" href="./index.html" aria-label="TimeCam home">
           <img class="brand-logo" src="images/TimeCamTextLOGO.png" alt="TimeCam" />
-          <div class="brand-text">
-            <div class="brand-sub">Support</div>
-          </div>
-        </div>
+          <span class="brand-name">TimeCam</span>
+        </a>
         <nav class="nav">
-          <a href="./index.html" class="nav-link is-active">Support</a>
+          <a href="#how-it-works" class="nav-link">How it works</a>
+          <a href="#features" class="nav-link">Features</a>
+          <a href="#screenshots" class="nav-link">Screenshots</a>
+          <a href="#eras" class="nav-link">Eras</a>
+          <a href="#pricing" class="nav-link">Pricing</a>
+          <a href="./support.html#faq" class="nav-link">FAQ</a>
           <a href="./privacy.html" class="nav-link">Privacy</a>
         </nav>
+        <a class="button nav-cta" href="https://apps.apple.com">Download on the App Store</a>
       </div>
     </header>
 
-    <main class="container">
-      <section class="hero">
-        <h1>Support</h1>
-        <p class="muted">
-          Get help with TimeCam AI, subscriptions, credits, and troubleshooting.
-        </p>
-        <div class="hero-actions">
-          <a class="button" id="contactEmailLink" href="#">Email Support</a>
-          <a class="button secondary" href="#faq">FAQs</a>
+    <main>
+      <!-- Hero -->
+      <section class="hero" id="top">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">History camera for iPhone</p>
+            <h1>See what this place looked like decades ago.</h1>
+            <p class="muted">
+              TimeCam reimagines the past in the present. Capture a scene, travel through eras with a timeline, and reveal
+              cinematic before and after views you can share instantly.
+            </p>
+            <div class="hero-actions">
+              <a class="button" href="https://apps.apple.com">Download on the App Store</a>
+              <button class="button secondary" data-modal-open="demo" type="button">Watch demo</button>
+            </div>
+            <p class="fineprint muted">Private by design. No advertising tracking.</p>
+          </div>
+          <div class="hero-visual">
+            <div class="device-frame" aria-hidden="true">
+              <div class="device-screen">
+                <img
+                  src="images/screenshot_1.png"
+                  alt="TimeCam app preview"
+                  class="device-shot"
+                  loading="lazy"
+                />
+              </div>
+              <div class="device-glow"></div>
+            </div>
+          </div>
         </div>
-        <p class="fineprint muted">
-          Support email: <span class="mono" id="supportEmailText">support@example.com</span>
-        </p>
       </section>
 
-      <section class="card-grid">
-        <article class="card">
-          <h2>Billing & subscriptions</h2>
-          <ul class="list">
-            <li>Subscriptions are managed by Apple (App Store).</li>
-            <li>To cancel: iPhone Settings → Apple ID → Subscriptions.</li>
-            <li>Top-ups are one-time purchases.</li>
-          </ul>
-        </article>
-
-        <article class="card">
-          <h2>Credits</h2>
-          <ul class="list">
-            <li>Credits are used to generate images and videos.</li>
-            <li>Use your coupon code in the Credits screen to redeem test credits (if provided).</li>
-          </ul>
-        </article>
-
-        <article class="card">
-          <h2>Common issues</h2>
-          <ul class="list">
-            <li>If purchases aren’t showing, confirm you’re signed into the App Store and have network connectivity.</li>
-            <li>If credits don’t update, open Credits → refresh balance.</li>
-          </ul>
-        </article>
+      <!-- Social proof -->
+      <section class="section social-proof">
+        <div class="container proof-grid">
+          <p>Built for privacy-first creativity</p>
+          <p>Designed with UK English in mind</p>
+          <p>Optimised for the latest iPhones</p>
+          <p>No inflated claims, just wonder</p>
+        </div>
       </section>
 
-      <section id="faq" class="section">
-        <h2>FAQs</h2>
-
-        <details class="faq">
-          <summary>My subscriptions/top-ups don’t appear in the app.</summary>
-          <div class="faq-body">
-            <p>
-              This is usually caused by App Store Connect products still being in Draft,
-              a mismatch between product IDs, or testing on simulator without StoreKit config.
-            </p>
+      <!-- Screenshot gallery -->
+      <section class="section" id="screenshots">
+        <div class="container">
+          <div class="section-head">
+            <h2>In-app moments, ready to share</h2>
+            <p class="muted">Five real screens from TimeCam, shown as they appear in the app.</p>
           </div>
-        </details>
-
-        <details class="faq">
-          <summary>I purchased but didn’t receive credits.</summary>
-          <div class="faq-body">
-            <p>
-              Please wait a moment and tap “Refresh balance”. If it still doesn’t update, email support with:
-            </p>
-            <ul class="list">
-              <li>Your Account ID (shown in Credits)</li>
-              <li>Time of purchase</li>
-              <li>Product purchased (Starter/Creator/Pro or top-up amount)</li>
-            </ul>
+          <div class="gallery" role="list">
+            <button class="gallery-item" type="button" data-lightbox="images/screenshot_1.png" role="listitem">
+              <img src="images/screenshot_1.png" alt="TimeCam screenshot 1" loading="lazy" />
+            </button>
+            <button class="gallery-item" type="button" data-lightbox="images/screenshot_2.png" role="listitem">
+              <img src="images/screenshot_2.png" alt="TimeCam screenshot 2" loading="lazy" />
+            </button>
+            <button class="gallery-item" type="button" data-lightbox="images/screenshot_3.png" role="listitem">
+              <img src="images/screenshot_3.png" alt="TimeCam screenshot 3" loading="lazy" />
+            </button>
+            <button class="gallery-item" type="button" data-lightbox="images/screenshot_4.png" role="listitem">
+              <img src="images/screenshot_4.png" alt="TimeCam screenshot 4" loading="lazy" />
+            </button>
+            <button class="gallery-item" type="button" data-lightbox="images/screenshot_5.png" role="listitem">
+              <img src="images/screenshot_5.png" alt="TimeCam screenshot 5" loading="lazy" />
+            </button>
           </div>
-        </details>
-
-        <details class="faq">
-          <summary>How do I request deletion of my data?</summary>
-          <div class="faq-body">
-            <p>Email support and we’ll help. See the Privacy page for details.</p>
-          </div>
-        </details>
+        </div>
       </section>
 
-      <section class="section">
-        <h2>Contact</h2>
-        <p class="muted">
-          Email is the fastest way to reach us. Please include your Account ID and device model/iOS version if relevant.
-        </p>
-        <div class="card">
-          <p><strong>Email:</strong> <span class="mono" id="supportEmailText2">support@example.com</span></p>
-          <p class="muted">
-            <strong>Business hours:</strong> Mon–Fri (we reply as quickly as possible).
-          </p>
+      <!-- How it works -->
+      <section class="section" id="how-it-works">
+        <div class="container">
+          <div class="section-head">
+            <h2>How it works</h2>
+            <p class="muted">Three steps from snapshot to time-travel reveal.</p>
+          </div>
+          <div class="card-grid">
+            <article class="card reveal">
+              <h3>1. Take a photo</h3>
+              <p class="muted">Capture a place, landmark, or street scene in the present.</p>
+            </article>
+            <article class="card reveal">
+              <h3>2. Choose an era</h3>
+              <p class="muted">Scroll a timeline or tap an era to reimagine the scene across time.</p>
+            </article>
+            <article class="card reveal">
+              <h3>3. Reveal and share</h3>
+              <p class="muted">Slide between then and now, export, and share in seconds.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Feature grid -->
+      <section class="section" id="features">
+        <div class="container">
+          <div class="section-head">
+            <h2>Features built for curious minds</h2>
+            <p class="muted">A cinematic toolkit that keeps control in your hands.</p>
+          </div>
+          <div class="feature-grid">
+            <article class="card reveal">
+              <h3>Era timeline</h3>
+              <p class="muted">Move through decades with a smooth slider that keeps history in view.</p>
+            </article>
+            <article class="card reveal">
+              <h3>Before and after reveal</h3>
+              <p class="muted">Compare the present with a reimagined past using a dynamic split view.</p>
+            </article>
+            <article class="card reveal">
+              <h3>Location-aware scenes</h3>
+              <p class="muted">TimeCam tailors outputs to the place you capture, without promising perfect accuracy.</p>
+            </article>
+            <article class="card reveal">
+              <h3>Share and export</h3>
+              <p class="muted">Save stunning stills or videos for social, stories, or personal archives.</p>
+            </article>
+            <article class="card reveal">
+              <h3>Personal memories</h3>
+              <p class="muted">Build a private timeline of places that matter to you.</p>
+            </article>
+            <article class="card reveal">
+              <h3>Private by design</h3>
+              <p class="muted">Your images stay yours. <a href="./privacy.html">Read the privacy policy</a>.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Era picker -->
+      <section class="section" id="eras">
+        <div class="container era-section">
+          <div>
+            <div class="section-head">
+              <h2>Pick an era</h2>
+              <p class="muted">Tap an era and watch the preview update.</p>
+            </div>
+            <div class="era-chips" role="list">
+              <button class="chip is-active" type="button" data-era="Victorian" role="listitem">Victorian</button>
+              <button class="chip" type="button" data-era="1920s" role="listitem">1920s</button>
+              <button class="chip" type="button" data-era="1970s" role="listitem">1970s</button>
+              <button class="chip" type="button" data-era="1990s" role="listitem">1990s</button>
+              <button class="chip" type="button" data-era="Medieval" role="listitem">Medieval</button>
+              <button class="chip" type="button" data-era="Ancient" role="listitem">Ancient</button>
+              <button class="chip" type="button" data-era="Future" role="listitem">Future</button>
+            </div>
+          </div>
+          <div class="era-preview card">
+            <p class="muted">Previewing</p>
+            <h3 id="eraLabel">Victorian</h3>
+            <p class="muted">A curated reimagining of your scene, tuned to the chosen era.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Pricing -->
+      <section class="section" id="pricing">
+        <div class="container">
+          <div class="section-head">
+            <h2>Pricing that scales with curiosity</h2>
+            <p class="muted">Prices shown in-app. Subscriptions and top-ups available.</p>
+          </div>
+          <div class="pricing-grid">
+            <article class="card reveal">
+              <h3>Starter</h3>
+              <p class="price">£4.99</p>
+              <ul class="list">
+                <li>40 credits</li>
+                <li>Standard rendering</li>
+                <li>Watermark-free exports</li>
+              </ul>
+            </article>
+            <article class="card featured reveal">
+              <div class="badge">Most popular</div>
+              <h3>Creator</h3>
+              <p class="price">£9.99</p>
+              <ul class="list">
+                <li>120 credits</li>
+                <li>High-resolution exports</li>
+                <li>Priority processing</li>
+              </ul>
+            </article>
+            <article class="card reveal">
+              <h3>Pro</h3>
+              <p class="price">£19.99</p>
+              <ul class="list">
+                <li>300 credits</li>
+                <li>Batch exports</li>
+                <li>Extended era library</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ teaser -->
+      <section class="section faq-teaser">
+        <div class="container">
+          <div class="section-head">
+            <h2>Questions, answered</h2>
+            <p class="muted">Get quick clarity, then dive deeper in the help centre.</p>
+          </div>
+          <div class="card-grid">
+            <article class="card">
+              <h3>How private is TimeCam?</h3>
+              <p class="muted">Your images are processed only to deliver your result.</p>
+            </article>
+            <article class="card">
+              <h3>Can I export a video?</h3>
+              <p class="muted">Yes, generate clips that compare then and now.</p>
+            </article>
+            <article class="card">
+              <h3>Where do I manage subscriptions?</h3>
+              <p class="muted">All billing is handled through the App Store.</p>
+            </article>
+          </div>
+          <a class="button secondary" href="./support.html#faq">Read the full FAQ</a>
+        </div>
+      </section>
+
+      <!-- Final call to action -->
+      <section class="section final-cta">
+        <div class="container cta-panel">
+          <div>
+            <h2>Bring the past to life in your camera roll.</h2>
+            <p class="muted">Download TimeCam and start exploring eras today.</p>
+          </div>
+          <a class="button" href="https://apps.apple.com">Download on the App Store</a>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
       <div class="container footer-inner">
-        <span class="muted">© <span id="year"></span> TimeCam</span>
-        <span class="muted">
+        <div>
+          <span class="brand-name">TimeCam</span>
+          <p class="muted">Support: <a href="mailto:support@timecam.ai">support@timecam.ai</a></p>
+        </div>
+        <div class="footer-links">
+          <a href="./support.html#faq">FAQ</a>
           <a href="./privacy.html">Privacy</a>
-        </span>
+        </div>
+        <div class="muted">© <span id="year"></span> TimeCam</div>
       </div>
     </footer>
+
+    <!-- Demo modal -->
+    <div class="modal" id="demoModal" aria-hidden="true" role="dialog" aria-label="TimeCam demo video">
+      <div class="modal-card">
+        <div class="modal-header">
+          <h3>TimeCam demo</h3>
+          <button class="icon-button" type="button" data-modal-close="demo" aria-label="Close demo">×</button>
+        </div>
+        <div class="modal-body">
+          <div class="video-placeholder" aria-hidden="true">
+            <div class="play-ring"></div>
+            <span>Demo video placeholder</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Screenshot lightbox -->
+    <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-label="Screenshot preview">
+      <button class="lightbox-backdrop" type="button" data-lightbox-close aria-label="Close screenshot"></button>
+      <div class="lightbox-card">
+        <button class="icon-button" type="button" data-lightbox-close aria-label="Close preview">×</button>
+        <img src="" alt="" id="lightboxImage" />
+      </div>
+    </div>
 
     <script src="./script.js"></script>
   </body>
