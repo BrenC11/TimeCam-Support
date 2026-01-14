@@ -137,18 +137,22 @@ export default function HomePage() {
             </div>
             <div className="feature-grid">
               <article className="card reveal">
+                <img className="feature-media" src="/images/Promo1.png" alt="TimeCam photorealistic time slice" />
                 <h3>Photorealistic time travel</h3>
                 <p className="muted">Transform a real photo into a historically plausible scene.</p>
               </article>
               <article className="card reveal">
+                <img className="feature-media" src="/images/Promo2.png" alt="TimeCam composition preservation" />
                 <h3>Composition-preserving results</h3>
                 <p className="muted">Keeps framing, perspective, and scene layout intact.</p>
               </article>
               <article className="card reveal">
+                <img className="feature-media" src="/images/Promo3.png" alt="TimeCam era picker" />
                 <h3>Era picker (past + future)</h3>
                 <p className="muted">Choose curated historical eras or optional future looks.</p>
               </article>
               <article className="card reveal">
+                <img className="feature-media" src="/images/Promo4.png" alt="TimeCam Memories timeline" />
                 <h3>Memories timeline</h3>
                 <p className="muted">Save multiple time slices into a Memory and scroll through eras.</p>
               </article>

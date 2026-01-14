@@ -10,7 +10,7 @@ export default function BeforeAfter() {
     <section className="section" id="preview">
       <div className="container">
         <div className="section-head">
-          <h2>Reveal the then and now</h2>
+          <h2 className="section-title-lg">Reveal the then and now</h2>
           <p className="muted">Drag the slider to compare a scene across time.</p>
         </div>
         <div className="before-after">

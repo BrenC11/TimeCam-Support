@@ -3,10 +3,20 @@
 import { useMemo, useState } from "react";
 
 const ERAS = ["Victorian", "1920s", "1970s", "1990s", "Medieval", "Ancient", "Future"];
+const ERA_DESCRIPTIONS: Record<string, string> = {
+  Victorian: "Gaslight streets, ironwork details, and early industrial energy.",
+  "1920s": "Art deco flourishes, jazz-age glamour, and crisp monochrome contrast.",
+  "1970s": "Warm tones, bold signage, and a lived-in, analogue feel.",
+  "1990s": "Cleaner lines, early digital textures, and familiar urban grit.",
+  Medieval: "Stonework, timber frames, and a world lit by torch and hearth.",
+  Ancient: "Weathered stone, classical forms, and timeless craftsmanship.",
+  Future: "Sleek materials, neon glow, and speculative cityscapes."
+};
 
 export default function EraTimeline() {
   const [index, setIndex] = useState(0);
   const currentEra = useMemo(() => ERAS[index], [index]);
+  const currentDescription = ERA_DESCRIPTIONS[currentEra];
 
   return (
     <section className="section" id="eras">
@@ -51,7 +61,7 @@ export default function EraTimeline() {
         <div className="era-preview card">
           <p className="muted">Previewing</p>
           <h3>{currentEra}</h3>
-          <p className="muted">A curated reimagining of your scene, tuned to the chosen era.</p>
+          <p className="muted">{currentDescription}</p>
         </div>
       </div>
     </section>

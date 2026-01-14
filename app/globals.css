@@ -213,6 +213,10 @@ a:hover { text-decoration: underline; }
   margin-bottom: 22px;
 }
 
+.section-title-lg {
+  font-size: clamp(30px, 3.4vw, 46px);
+}
+
 .social-proof {
   padding: 20px 0 10px;
 }
@@ -348,6 +352,15 @@ a:hover { text-decoration: underline; }
   padding: 18px;
   box-shadow: var(--shadow);
   backdrop-filter: blur(10px);
+}
+
+.feature-media {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 14px;
+  margin-bottom: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
 }
 
 .card h2,
