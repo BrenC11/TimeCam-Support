@@ -175,12 +175,17 @@ export default function HomePage() {
             <div className="card-stack">
               <article className="card reveal">
                 <h3>Explore</h3>
+                <p className="muted">History isn’t behind you anymore. It’s right where you’re standing.</p>
                 <p className="muted">
-                  Explore mode lets you time travel to specific historic moments tied to your photo. Instead of picking
-                  a year at random, Explore highlights notable events and eras that fit the place or scene you captured,
-                  so you can generate time slices that feel like you arrived during a real moment in history while
-                  staying anchored to your original composition.
+                  Explore lets you uncover historic moments of real significance exactly where they happened. Walk the
+                  streets, fields, and landmarks around you and watch the past unfold live in front of your eyes.
                 </p>
+                <p className="muted">
+                  Stand on the ground where history was made. Travel back in time, witness pivotal moments as they
+                  happened, and experience the past layered seamlessly over the present. No textbooks. No timelines.
+                  Just you, standing there, watching history happen.
+                </p>
+                <p className="muted">This isn’t reading about the past. It’s stepping into it.</p>
               </article>
               <article className="card reveal">
                 <h3>Scan</h3>
