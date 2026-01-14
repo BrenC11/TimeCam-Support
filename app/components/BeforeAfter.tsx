@@ -13,20 +13,22 @@ export default function BeforeAfter() {
           <p className="muted">Drag the slider to compare a scene across time.</p>
         </div>
         <div className="before-after">
-          <div className="before-after-frame" aria-hidden="true">
+          <div
+            className="before-after-frame"
+            style={{ "--pos": `${value}%` } as React.CSSProperties}
+            aria-hidden="true"
+          >
             <img
               src="/images/Before1.JPG"
               alt="Present day scene"
-              className="before-after-image"
+              className="before-after-image before-after-before"
             />
-            <div className="before-after-overlay" style={{ width: `${value}%` }}>
-              <img
-                src="/images/After1.JPG"
-                alt="Reimagined historical scene"
-                className="before-after-image"
-              />
-            </div>
-            <div className="before-after-handle" style={{ left: `${value}%` }}>
+            <img
+              src="/images/After1.JPG"
+              alt="Reimagined historical scene"
+              className="before-after-image before-after-after"
+            />
+            <div className="before-after-handle">
               <span className="before-after-grip"></span>
             </div>
           </div>
