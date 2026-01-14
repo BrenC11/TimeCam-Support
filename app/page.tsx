@@ -169,6 +169,34 @@ export default function HomePage() {
         <section className="section">
           <div className="container">
             <div className="section-head">
+              <h2>Explore and Scan</h2>
+              <p className="muted">Guided time travel when you want meaningful moments.</p>
+            </div>
+            <div className="card-grid">
+              <article className="card reveal">
+                <h3>Explore</h3>
+                <p className="muted">
+                  Explore mode lets you time travel to specific historic moments tied to your photo. Instead of picking
+                  a year at random, Explore highlights notable events and eras that fit the place or scene you captured,
+                  so you can generate time slices that feel like you arrived during a real moment in history while
+                  staying anchored to your original composition.
+                </p>
+              </article>
+              <article className="card reveal">
+                <h3>Scan</h3>
+                <p className="muted">
+                  Scan analyzes your photo and reveals historic dates and moments you can generate from. With one tap,
+                  it pulls out a short list of meaningful time-travel suggestions with quick summaries, so you can pick
+                  an event and instantly create a matching time slice with no research required.
+                </p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section className="section">
+          <div className="container">
+            <div className="section-head">
               <h2>Advanced controls</h2>
               <p className="muted">Fine-tune how your time slice is generated.</p>
             </div>
