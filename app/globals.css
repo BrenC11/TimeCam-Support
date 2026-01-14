@@ -257,6 +257,12 @@ a:hover { text-decoration: underline; }
   margin: 0 auto;
 }
 
+.before-after-toggle {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
 .before-after-frame {
   position: relative;
   border-radius: 22px;

@@ -4,6 +4,7 @@ import { useState } from "react";
 
 export default function BeforeAfter() {
   const [value, setValue] = useState(55);
+  const [useVideo, setUseVideo] = useState(true);
 
   return (
     <section className="section" id="preview">
@@ -13,6 +14,22 @@ export default function BeforeAfter() {
           <p className="muted">Drag the slider to compare a scene across time.</p>
         </div>
         <div className="before-after">
+          <div className="before-after-toggle" role="group" aria-label="After preview mode">
+            <button
+              type="button"
+              className={`chip ${useVideo ? "is-active" : ""}`}
+              onClick={() => setUseVideo(true)}
+            >
+              After video
+            </button>
+            <button
+              type="button"
+              className={`chip ${!useVideo ? "is-active" : ""}`}
+              onClick={() => setUseVideo(false)}
+            >
+              After photo
+            </button>
+          </div>
           <div
             className="before-after-frame"
             style={{ "--pos": `${value}%` } as React.CSSProperties}
@@ -23,11 +40,25 @@ export default function BeforeAfter() {
               alt="Present day scene"
               className="before-after-image before-after-before"
             />
-            <img
-              src="/images/After1.JPG"
-              alt="Reimagined historical scene"
-              className="before-after-image before-after-after"
-            />
+            {useVideo ? (
+              <video
+                className="before-after-image before-after-after"
+                src="/videos/After1.MP4"
+                poster="/images/After1.JPG"
+                autoPlay
+                muted
+                loop
+                playsInline
+              >
+                <track kind="captions" />
+              </video>
+            ) : (
+              <img
+                src="/images/After1.JPG"
+                alt="Reimagined historical scene"
+                className="before-after-image before-after-after"
+              />
+            )}
             <div className="before-after-handle">
               <span className="before-after-grip"></span>
             </div>
