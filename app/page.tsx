@@ -172,7 +172,7 @@ export default function HomePage() {
               <h2>Explore and Scan</h2>
               <p className="muted">Guided time travel when you want meaningful moments.</p>
             </div>
-            <div className="card-grid">
+            <div className="card-stack">
               <article className="card reveal">
                 <h3>Explore</h3>
                 <p className="muted">

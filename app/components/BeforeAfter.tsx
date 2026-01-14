@@ -15,13 +15,13 @@ export default function BeforeAfter() {
         <div className="before-after">
           <div className="before-after-frame" aria-hidden="true">
             <img
-              src="/images/SCREENSHOT_2.jpg"
+              src="/images/Before1.JPG"
               alt="Present day scene"
               className="before-after-image"
             />
             <div className="before-after-overlay" style={{ width: `${value}%` }}>
               <img
-                src="/images/SCREENSHOT_3.jpg"
+                src="/images/After1.JPG"
                 alt="Reimagined historical scene"
                 className="before-after-image"
               />
