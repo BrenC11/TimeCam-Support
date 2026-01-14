@@ -98,18 +98,6 @@ export default function ClientScripts() {
 
     document.addEventListener("keydown", handleKeydown);
 
-    const chips = document.querySelectorAll<HTMLButtonElement>("[data-era]");
-    const label = document.getElementById("eraLabel");
-    if (label && chips.length > 0) {
-      chips.forEach((chip) => {
-        chip.addEventListener("click", () => {
-          chips.forEach((btn) => btn.classList.remove("is-active"));
-          chip.classList.add("is-active");
-          label.textContent = chip.getAttribute("data-era") || "";
-        });
-      });
-    }
-
     const prefersReduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     if (!prefersReduced) {
       const targets = document.querySelectorAll<HTMLElement>(".reveal");

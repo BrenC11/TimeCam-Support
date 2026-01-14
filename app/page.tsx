@@ -1,4 +1,7 @@
 import Link from "next/link";
+import AnimatedHeadline from "./components/AnimatedHeadline";
+import BeforeAfter from "./components/BeforeAfter";
+import EraTimeline from "./components/EraTimeline";
 
 export default function HomePage() {
   return (
@@ -28,11 +31,17 @@ export default function HomePage() {
         <section className="hero" id="top">
           <div className="container hero-grid">
             <div className="hero-copy">
-              <p className="eyebrow">History camera for iPhone</p>
-              <h1>See what this place looked like decades ago.</h1>
+              <p className="eyebrow">Then. Now. Next.</p>
+              <AnimatedHeadline text="See your world in another era." />
               <p className="muted">
-                TimeCam reimagines the past in the present. Capture a scene, travel through eras with a timeline, and
-                reveal cinematic before and after views you can share instantly.
+                TimeCam AI turns a photo you take today into a photorealistic time slice from another era—while keeping
+                the original scene, framing, and subject intact. Snap a building, street, landmark, or place you love,
+                then travel backward or forward in time to see how it could have looked—historically grounded, richly
+                detailed, and styled like a real photograph.
+              </p>
+              <p className="muted">
+                Unlike generate-a-random-scene tools, TimeCam AI edits your actual photo across time, preserving
+                composition and real-world layout so the result still feels like your moment, just in a different year.
               </p>
               <div className="hero-actions">
                 <a className="button" href="https://apps.apple.com">
@@ -59,6 +68,8 @@ export default function HomePage() {
             </div>
           </div>
         </section>
+
+        <BeforeAfter />
 
         <section className="section social-proof">
           <div className="container proof-grid">
@@ -99,20 +110,20 @@ export default function HomePage() {
           <div className="container">
             <div className="section-head">
               <h2>How it works</h2>
-              <p className="muted">Three steps from snapshot to time-travel reveal.</p>
+              <p className="muted">Three steps from capture to time slice.</p>
             </div>
             <div className="card-grid">
               <article className="card reveal">
-                <h3>1. Take a photo</h3>
-                <p className="muted">Capture a place, landmark, or street scene in the present.</p>
+                <h3>1. Capture</h3>
+                <p className="muted">Take or upload a photo of a place or scene.</p>
               </article>
               <article className="card reveal">
                 <h3>2. Choose an era</h3>
-                <p className="muted">Scroll a timeline or tap an era to reimagine the scene across time.</p>
+                <p className="muted">Pick a year or suggested historic moment with the timeline.</p>
               </article>
               <article className="card reveal">
-                <h3>3. Reveal and share</h3>
-                <p className="muted">Slide between then and now, export, and share in seconds.</p>
+                <h3>3. Generate &amp; save</h3>
+                <p className="muted">Create your time slice, save to Memories, and share or export.</p>
               </article>
             </div>
           </div>
@@ -122,28 +133,28 @@ export default function HomePage() {
           <div className="container">
             <div className="section-head">
               <h2>Features built for curious minds</h2>
-              <p className="muted">A cinematic toolkit that keeps control in your hands.</p>
+              <p className="muted">Photorealistic time travel with pro controls and cinematic output.</p>
             </div>
             <div className="feature-grid">
               <article className="card reveal">
-                <h3>Era timeline</h3>
-                <p className="muted">Move through decades with a smooth slider that keeps history in view.</p>
+                <h3>Photorealistic time travel</h3>
+                <p className="muted">Transform a real photo into a historically plausible scene.</p>
               </article>
               <article className="card reveal">
-                <h3>Before and after reveal</h3>
-                <p className="muted">Compare the present with a reimagined past using a dynamic split view.</p>
+                <h3>Composition-preserving results</h3>
+                <p className="muted">Keeps framing, perspective, and scene layout intact.</p>
               </article>
               <article className="card reveal">
-                <h3>Location-aware scenes</h3>
-                <p className="muted">TimeCam tailors outputs to the place you capture, without promising perfect accuracy.</p>
+                <h3>Era picker (past + future)</h3>
+                <p className="muted">Choose curated historical eras or optional future looks.</p>
               </article>
               <article className="card reveal">
-                <h3>Share and export</h3>
-                <p className="muted">Save stunning stills or videos for social, stories, or personal archives.</p>
+                <h3>Memories timeline</h3>
+                <p className="muted">Save multiple time slices into a Memory and scroll through eras.</p>
               </article>
               <article className="card reveal">
-                <h3>Personal memories</h3>
-                <p className="muted">Build a private timeline of places that matter to you.</p>
+                <h3>Suggested dates</h3>
+                <p className="muted">Get quick era ideas when you are not sure where to start.</p>
               </article>
               <article className="card reveal">
                 <h3>Private by design</h3>
@@ -155,30 +166,27 @@ export default function HomePage() {
           </div>
         </section>
 
-        <section className="section" id="eras">
-          <div className="container era-section">
-            <div>
-              <div className="section-head">
-                <h2>Pick an era</h2>
-                <p className="muted">Tap an era and watch the preview update.</p>
-              </div>
-              <div className="era-chips" role="list">
-                <button className="chip is-active" type="button" data-era="Victorian" role="listitem">Victorian</button>
-                <button className="chip" type="button" data-era="1920s" role="listitem">1920s</button>
-                <button className="chip" type="button" data-era="1970s" role="listitem">1970s</button>
-                <button className="chip" type="button" data-era="1990s" role="listitem">1990s</button>
-                <button className="chip" type="button" data-era="Medieval" role="listitem">Medieval</button>
-                <button className="chip" type="button" data-era="Ancient" role="listitem">Ancient</button>
-                <button className="chip" type="button" data-era="Future" role="listitem">Future</button>
-              </div>
+        <section className="section">
+          <div className="container">
+            <div className="section-head">
+              <h2>Advanced controls</h2>
+              <p className="muted">Fine-tune how your time slice is generated.</p>
             </div>
-            <div className="era-preview card">
-              <p className="muted">Previewing</p>
-              <h3 id="eraLabel">Victorian</h3>
-              <p className="muted">A curated reimagining of your scene, tuned to the chosen era.</p>
+            <div className="card">
+              <ul className="list">
+                <li>Keep original people (preserve identity and pose, update clothing to match the era)</li>
+                <li>Remove people cleanly or add era-appropriate people when none are present</li>
+                <li>Population density controls (empty → crowded)</li>
+                <li>Era fidelity modes (more accurate vs more creative)</li>
+                <li>Lighting and time-of-day controls</li>
+                <li>Building preservation options for architecture-heavy scenes</li>
+                <li>Multiple AI photo models: Nano Banana, Nano Banana Pro, SeaDream 4.5</li>
+              </ul>
             </div>
           </div>
         </section>
+
+        <EraTimeline />
 
         <section className="section" id="pricing">
           <div className="container">
@@ -232,7 +240,7 @@ export default function HomePage() {
               </article>
               <article className="card">
                 <h3>Can I export a video?</h3>
-                <p className="muted">Yes, generate clips that compare then and now.</p>
+                <p className="muted">Yes, generate timelines, reveals, or montages.</p>
               </article>
               <article className="card">
                 <h3>Where do I manage subscriptions?</h3>
@@ -242,6 +250,24 @@ export default function HomePage() {
             <Link className="button secondary" href="/support#faq">
               Read the full FAQ
             </Link>
+          </div>
+        </section>
+
+        <section className="section">
+          <div className="container">
+            <div className="section-head">
+              <h2>Use cases</h2>
+              <p className="muted">Made for real places and then vs now storytelling.</p>
+            </div>
+            <div className="card">
+              <ul className="list">
+                <li>Recreate a street corner in the 1920s</li>
+                <li>See a modern skyline before it existed</li>
+                <li>Turn a landmark into a then vs now series</li>
+                <li>Make a timeline Memory from a trip</li>
+                <li>Generate a shareable montage for social</li>
+              </ul>
+            </div>
           </div>
         </section>
 

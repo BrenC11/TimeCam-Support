@@ -29,8 +29,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${spaceGrotesk.variable} ${fraunces.variable}`}>
-        {children}
-        <ClientScripts />
+        <div className="page">
+          {children}
+          <ClientScripts />
+        </div>
       </body>
     </html>
   );
