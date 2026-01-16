@@ -345,6 +345,22 @@ a:hover { text-decoration: underline; }
   gap: 18px;
 }
 
+.section-with-aside {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(240px, 320px);
+  gap: 24px;
+  align-items: center;
+}
+
+.section-aside {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  box-shadow: var(--shadow);
+}
+
 .card {
   background: var(--card);
   border: 1px solid var(--stroke);
@@ -354,14 +370,6 @@ a:hover { text-decoration: underline; }
   backdrop-filter: blur(10px);
 }
 
-.feature-media {
-  width: 100%;
-  aspect-ratio: 1 / 1;
-  object-fit: cover;
-  border-radius: 14px;
-  margin-bottom: 12px;
-  border: 1px solid rgba(255, 255, 255, 0.12);
-}
 
 .card h2,
 .card h3 { margin: 0 0 10px; }
@@ -592,6 +600,7 @@ a:hover { text-decoration: underline; }
   .card-grid,
   .feature-grid,
   .pricing-grid { grid-template-columns: 1fr; }
+  .section-with-aside { grid-template-columns: 1fr; }
   .cta-panel { flex-direction: column; align-items: flex-start; }
 }
 

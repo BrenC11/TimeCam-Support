@@ -69,7 +69,18 @@ export default function HomePage() {
           </div>
         </section>
 
-        <BeforeAfter />
+        <section className="section" id="preview">
+          <div className="container section-with-aside">
+            <div className="section-content">
+              <BeforeAfter />
+            </div>
+            <img
+              className="section-aside"
+              src="/images/Promo1.png"
+              alt="TimeCam time slice preview"
+            />
+          </div>
+        </section>
 
         <section className="section social-proof">
           <div className="container proof-grid">
@@ -137,22 +148,18 @@ export default function HomePage() {
             </div>
             <div className="feature-grid">
               <article className="card reveal">
-                <img className="feature-media" src="/images/Promo1.png" alt="TimeCam photorealistic time slice" />
                 <h3>Photorealistic time travel</h3>
                 <p className="muted">Transform a real photo into a historically plausible scene.</p>
               </article>
               <article className="card reveal">
-                <img className="feature-media" src="/images/Promo2.png" alt="TimeCam composition preservation" />
                 <h3>Composition-preserving results</h3>
                 <p className="muted">Keeps framing, perspective, and scene layout intact.</p>
               </article>
               <article className="card reveal">
-                <img className="feature-media" src="/images/Promo3.png" alt="TimeCam era picker" />
                 <h3>Era picker (past + future)</h3>
                 <p className="muted">Choose curated historical eras or optional future looks.</p>
               </article>
               <article className="card reveal">
-                <img className="feature-media" src="/images/Promo4.png" alt="TimeCam Memories timeline" />
                 <h3>Memories timeline</h3>
                 <p className="muted">Save multiple time slices into a Memory and scroll through eras.</p>
               </article>
@@ -171,96 +178,117 @@ export default function HomePage() {
         </section>
 
         <section className="section">
-          <div className="container">
+          <div className="container section-with-aside">
             <div className="section-head">
               <h2>Explore and Scan</h2>
               <p className="muted">Guided time travel when you want meaningful moments.</p>
             </div>
-            <div className="card-stack">
-              <article className="card reveal">
-                <h3>Explore</h3>
-                <p className="muted">History isn’t behind you anymore. It’s right where you’re standing.</p>
-                <p className="muted">
-                  Explore lets you uncover historic moments of real significance exactly where they happened. Walk the
-                  streets, fields, and landmarks around you and watch the past unfold live in front of your eyes.
-                </p>
-                <p className="muted">
-                  Stand on the ground where history was made. Travel back in time, witness pivotal moments as they
-                  happened, and experience the past layered seamlessly over the present. No textbooks. No timelines.
-                  Just you, standing there, watching history happen.
-                </p>
-                <p className="muted">This isn’t reading about the past. It’s stepping into it.</p>
-              </article>
-              <article className="card reveal">
-                <h3>Scan</h3>
-                <p className="muted">
-                  Scan analyzes your photo and reveals historic dates and moments you can generate from. With one tap,
-                  it pulls out a short list of meaningful time-travel suggestions with quick summaries, so you can pick
-                  an event and instantly create a matching time slice with no research required.
-                </p>
-              </article>
+            <div className="section-content">
+              <div className="card-stack">
+                <article className="card reveal">
+                  <h3>Explore</h3>
+                  <p className="muted">History isn’t behind you anymore. It’s right where you’re standing.</p>
+                  <p className="muted">
+                    Explore lets you uncover historic moments of real significance exactly where they happened. Walk the
+                    streets, fields, and landmarks around you and watch the past unfold live in front of your eyes.
+                  </p>
+                  <p className="muted">
+                    Stand on the ground where history was made. Travel back in time, witness pivotal moments as they
+                    happened, and experience the past layered seamlessly over the present. No textbooks. No timelines.
+                    Just you, standing there, watching history happen.
+                  </p>
+                  <p className="muted">This isn’t reading about the past. It’s stepping into it.</p>
+                </article>
+                <article className="card reveal">
+                  <h3>Scan</h3>
+                  <p className="muted">
+                    Scan analyzes your photo and reveals historic dates and moments you can generate from. With one tap,
+                    it pulls out a short list of meaningful time-travel suggestions with quick summaries, so you can pick
+                    an event and instantly create a matching time slice with no research required.
+                  </p>
+                </article>
+              </div>
             </div>
+            <img
+              className="section-aside"
+              src="/images/Promo2.png"
+              alt="Explore mode preview"
+            />
           </div>
         </section>
 
         <section className="section">
-          <div className="container">
+          <div className="container section-with-aside">
             <div className="section-head">
               <h2>Advanced controls</h2>
               <p className="muted">Fine-tune how your time slice is generated.</p>
             </div>
-            <div className="card">
-              <ul className="list">
-                <li>Keep original people (preserve identity and pose, update clothing to match the era)</li>
-                <li>Remove people cleanly or add era-appropriate people when none are present</li>
-                <li>Population density controls (empty → crowded)</li>
-                <li>Era fidelity modes (more accurate vs more creative)</li>
-                <li>Lighting and time-of-day controls</li>
-                <li>Building preservation options for architecture-heavy scenes</li>
-                <li>Multiple AI photo models: Nano Banana, Nano Banana Pro, SeaDream 4.5</li>
-              </ul>
+            <div className="section-content">
+              <div className="card">
+                <ul className="list">
+                  <li>Keep original people (preserve identity and pose, update clothing to match the era)</li>
+                  <li>Remove people cleanly or add era-appropriate people when none are present</li>
+                  <li>Population density controls (empty → crowded)</li>
+                  <li>Era fidelity modes (more accurate vs more creative)</li>
+                  <li>Lighting and time-of-day controls</li>
+                  <li>Building preservation options for architecture-heavy scenes</li>
+                  <li>Multiple AI photo models: Nano Banana, Nano Banana Pro, SeaDream 4.5</li>
+                </ul>
+              </div>
             </div>
+            <img
+              className="section-aside"
+              src="/images/Promo3.png"
+              alt="Advanced controls preview"
+            />
           </div>
         </section>
 
         <EraTimeline />
 
         <section className="section" id="pricing">
-          <div className="container">
+          <div className="container section-with-aside">
             <div className="section-head">
               <h2>Pricing that scales with curiosity</h2>
               <p className="muted">Prices shown in-app. Subscriptions and top-ups available.</p>
             </div>
-            <div className="pricing-grid">
-              <article className="card reveal">
-                <h3>Starter</h3>
-                <p className="price">£4.99</p>
-                <ul className="list">
-                  <li>120 credits</li>
-                  <li>Standard rendering</li>
-                  <li>Watermark-free exports</li>
-                </ul>
-              </article>
-              <article className="card featured reveal">
-                <div className="badge">Most popular</div>
-                <h3>Creator</h3>
-                <p className="price">£9.99</p>
-                <ul className="list">
-                  <li>400 credits</li>
-                  <li>High-resolution exports</li>
-                  <li>Priority processing</li>
-                </ul>
-              </article>
-              <article className="card reveal">
-                <h3>Pro</h3>
-                <p className="price">£49.99</p>
-                <ul className="list">
-                  <li>2,500 credits</li>
-                  <li>Batch exports</li>
-                  <li>Extended era library</li>
-                </ul>
-              </article>
+            <div className="section-content">
+              <div className="pricing-grid">
+                <article className="card reveal">
+                  <h3>Starter</h3>
+                  <p className="price">£4.99</p>
+                  <ul className="list">
+                    <li>120 credits</li>
+                    <li>Standard rendering</li>
+                    <li>Watermark-free exports</li>
+                  </ul>
+                </article>
+                <article className="card featured reveal">
+                  <div className="badge">Most popular</div>
+                  <h3>Creator</h3>
+                  <p className="price">£9.99</p>
+                  <ul className="list">
+                    <li>400 credits</li>
+                    <li>High-resolution exports</li>
+                    <li>Priority processing</li>
+                  </ul>
+                </article>
+                <article className="card reveal">
+                  <h3>Pro</h3>
+                  <p className="price">£49.99</p>
+                  <ul className="list">
+                    <li>2,500 credits</li>
+                    <li>Batch exports</li>
+                    <li>Extended era library</li>
+                  </ul>
+                </article>
+              </div>
             </div>
+            <img
+              className="section-aside"
+              src="/images/Promo4.png"
+              alt="Pricing overview preview"
+            />
           </div>
         </section>
 
