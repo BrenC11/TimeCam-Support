@@ -23,10 +23,10 @@ export default function PrivacyPage() {
       <main className="container">
         <section className="hero compact">
           <p className="eyebrow">Privacy</p>
-          <h1>Privacy Policy for TimeCam</h1>
-          <p className="fineprint muted">
-            Effective Date: <span id="lastUpdated">[Insert date]</span>
-          </p>
+        <h1>Privacy Policy for TimeCam</h1>
+        <p className="fineprint muted">
+          Effective Date: <span id="lastUpdated">16-01-26</span>
+        </p>
         </section>
 
         <section className="section card">
