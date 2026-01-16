@@ -171,37 +171,35 @@ export default function HomePage() {
         </section>
 
         <section className="section">
-          <div className="container section-with-aside">
+          <div className="container">
             <div className="section-head">
               <h2>Explore and Scan</h2>
               <p className="muted">Guided time travel when you want meaningful moments.</p>
             </div>
-            <div className="section-content">
-              <div className="card-stack">
-                <article className="card reveal explore-card">
-                  <h3>Explore</h3>
-                  <img className="explore-media" src="/images/Promo2.png" alt="Explore mode preview" />
-                  <p className="muted">History isn’t behind you anymore. It’s right where you’re standing.</p>
-                  <p className="muted">
-                    Explore lets you uncover historic moments of real significance exactly where they happened. Walk the
-                    streets, fields, and landmarks around you and watch the past unfold live in front of your eyes.
-                  </p>
-                  <p className="muted">
-                    Stand on the ground where history was made. Travel back in time, witness pivotal moments as they
-                    happened, and experience the past layered seamlessly over the present. No textbooks. No timelines.
-                    Just you, standing there, watching history happen.
-                  </p>
-                  <p className="muted">This isn’t reading about the past. It’s stepping into it.</p>
-                </article>
-                <article className="card reveal">
-                  <h3>Scan</h3>
-                  <p className="muted">
-                    Scan analyzes your photo and reveals historic dates and moments you can generate from. With one tap,
-                    it pulls out a short list of meaningful time-travel suggestions with quick summaries, so you can pick
-                    an event and instantly create a matching time slice with no research required.
-                  </p>
-                </article>
-              </div>
+            <div className="card-stack">
+              <article className="card reveal explore-card">
+                <h3>Explore</h3>
+                <img className="explore-media" src="/images/Promo2.png" alt="Explore mode preview" />
+                <p className="muted">History isn’t behind you anymore. It’s right where you’re standing.</p>
+                <p className="muted">
+                  Explore lets you uncover historic moments of real significance exactly where they happened. Walk the
+                  streets, fields, and landmarks around you and watch the past unfold live in front of your eyes.
+                </p>
+                <p className="muted">
+                  Stand on the ground where history was made. Travel back in time, witness pivotal moments as they
+                  happened, and experience the past layered seamlessly over the present. No textbooks. No timelines.
+                  Just you, standing there, watching history happen.
+                </p>
+                <p className="muted">This isn’t reading about the past. It’s stepping into it.</p>
+              </article>
+              <article className="card reveal">
+                <h3>Scan</h3>
+                <p className="muted">
+                  Scan analyzes your photo and reveals historic dates and moments you can generate from. With one tap,
+                  it pulls out a short list of meaningful time-travel suggestions with quick summaries, so you can pick
+                  an event and instantly create a matching time slice with no research required.
+                </p>
+              </article>
             </div>
           </div>
         </section>
@@ -335,6 +333,7 @@ export default function HomePage() {
           <div className="footer-links">
             <Link href="/support#faq">FAQ</Link>
             <Link href="/privacy">Privacy</Link>
+            <Link href="/terms">Terms</Link>
           </div>
           <div className="muted">© <span id="year"></span> TimeCam</div>
         </div>

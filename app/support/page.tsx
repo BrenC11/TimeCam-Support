@@ -121,6 +121,7 @@ export default function SupportPage() {
           <div className="footer-links">
             <Link href="/">Home</Link>
             <Link href="/privacy">Privacy</Link>
+            <Link href="/terms">Terms</Link>
           </div>
           <div className="muted">© <span id="year"></span> TimeCam</div>
         </div>

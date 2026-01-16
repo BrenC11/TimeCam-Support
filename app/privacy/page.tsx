@@ -168,6 +168,7 @@ export default function PrivacyPage() {
           <div className="footer-links">
             <Link href="/support">Support</Link>
             <Link href="/">Home</Link>
+            <Link href="/terms">Terms</Link>
           </div>
           <div className="muted">© <span id="year"></span> TimeCam</div>
         </div>
