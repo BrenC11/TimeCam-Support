@@ -119,10 +119,12 @@ export default function HomePage() {
             <div className="card-grid">
               <article className="card reveal">
                 <h3>1. Capture</h3>
+                <img className="step-media" src="/images/CaptureImage.png" alt="Capture a scene" />
                 <p className="muted">Take or upload a photo of a place or scene.</p>
               </article>
               <article className="card reveal">
                 <h3>2. Choose an era</h3>
+                <img className="step-media" src="/images/PickEra.png" alt="Pick an era" />
                 <p className="muted">Pick a year or suggested historic moment with the timeline.</p>
               </article>
               <article className="card reveal">
@@ -192,8 +194,9 @@ export default function HomePage() {
                 </p>
                 <p className="muted">This isn’t reading about the past. It’s stepping into it.</p>
               </article>
-              <article className="card reveal">
+              <article className="card reveal scan-card">
                 <h3>Scan</h3>
+                <img className="scan-media" src="/images/TimeCamScan.png" alt="Scan mode preview" />
                 <p className="muted">
                   Scan analyzes your photo and reveals historic dates and moments you can generate from. With one tap,
                   it pulls out a short list of meaningful time-travel suggestions with quick summaries, so you can pick
@@ -235,9 +238,9 @@ export default function HomePage() {
             <div className="pricing-grid">
               <article className="card reveal">
                 <h3>Starter</h3>
-                <p className="price">£4.99</p>
+                <p className="price">£4.99/mo</p>
                 <ul className="list">
-                  <li>120 credits</li>
+                  <li>120 credits per month</li>
                   <li>Standard rendering</li>
                   <li>Watermark-free exports</li>
                 </ul>
@@ -245,18 +248,18 @@ export default function HomePage() {
               <article className="card featured reveal">
                 <div className="badge">Most popular</div>
                 <h3>Creator</h3>
-                <p className="price">£9.99</p>
+                <p className="price">£9.99/mo</p>
                 <ul className="list">
-                  <li>400 credits</li>
+                  <li>400 credits per month</li>
                   <li>High-resolution exports</li>
                   <li>Priority processing</li>
                 </ul>
               </article>
               <article className="card reveal">
                 <h3>Pro</h3>
-                <p className="price">£49.99</p>
+                <p className="price">£49.99/mo</p>
                 <ul className="list">
-                  <li>2,500 credits</li>
+                  <li>2,500 credits per month</li>
                   <li>Batch exports</li>
                   <li>Extended era library</li>
                 </ul>
