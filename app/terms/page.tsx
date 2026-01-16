@@ -26,7 +26,7 @@ export default function TermsPage() {
           <p className="eyebrow">Terms</p>
           <h1>TimeCam – Terms of Use (EULA)</h1>
           <p className="fineprint muted">
-            Last updated: <span id="termsUpdated">[Insert date]</span>
+            Last updated: <span id="termsUpdated">16-01-26</span>
           </p>
         </section>
 
