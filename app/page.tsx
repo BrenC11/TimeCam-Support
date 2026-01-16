@@ -129,6 +129,7 @@ export default function HomePage() {
               </article>
               <article className="card reveal">
                 <h3>3. Generate &amp; save</h3>
+                <img className="step-media" src="/images/GenAndSave.png" alt="Generate and save" />
                 <p className="muted">Create your time slice, save to Memories, and share or export.</p>
               </article>
             </div>

@@ -350,7 +350,7 @@ a:hover { text-decoration: underline; }
 }
 
 .explore-media {
-  width: min(180px, 55%);
+  width: min(220px, 62%);
   aspect-ratio: 1 / 1;
   object-fit: cover;
   border-radius: 14px;
@@ -365,7 +365,7 @@ a:hover { text-decoration: underline; }
 }
 
 .scan-media {
-  width: min(180px, 55%);
+  width: min(220px, 62%);
   aspect-ratio: 1 / 1;
   object-fit: cover;
   border-radius: 14px;

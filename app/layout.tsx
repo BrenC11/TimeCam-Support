@@ -18,7 +18,22 @@ const fraunces = Fraunces({
 
 export const metadata = {
   title: "TimeCam",
-  description: "TimeCam is a cinematic iOS camera that reimagines any place across time."
+  description: "TimeCam is a cinematic iOS camera that reimagines any place across time.",
+  icons: {
+    icon: "/images/TimeCamTextLOGO.png",
+    apple: "/images/TimeCamTextLOGO.png"
+  },
+  openGraph: {
+    title: "TimeCam",
+    description: "TimeCam is a cinematic iOS camera that reimagines any place across time.",
+    images: ["/images/TimeCamTextLOGO.png"]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "TimeCam",
+    description: "TimeCam is a cinematic iOS camera that reimagines any place across time.",
+    images: ["/images/TimeCamTextLOGO.png"]
+  }
 };
 
 export default function RootLayout({
