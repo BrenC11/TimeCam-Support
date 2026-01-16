@@ -178,8 +178,9 @@ export default function HomePage() {
             </div>
             <div className="section-content">
               <div className="card-stack">
-                <article className="card reveal">
+                <article className="card reveal explore-card">
                   <h3>Explore</h3>
+                  <img className="explore-media" src="/images/Promo2.png" alt="Explore mode preview" />
                   <p className="muted">History isn’t behind you anymore. It’s right where you’re standing.</p>
                   <p className="muted">
                     Explore lets you uncover historic moments of real significance exactly where they happened. Walk the
@@ -202,11 +203,6 @@ export default function HomePage() {
                 </article>
               </div>
             </div>
-            <img
-              className="section-aside"
-              src="/images/Promo2.png"
-              alt="Explore mode preview"
-            />
           </div>
         </section>
 
