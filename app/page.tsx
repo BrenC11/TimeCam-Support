@@ -70,15 +70,8 @@ export default function HomePage() {
         </section>
 
         <section className="section" id="preview">
-          <div className="container section-with-aside">
-            <div className="section-content">
-              <BeforeAfter />
-            </div>
-            <img
-              className="section-aside"
-              src="/images/Promo1.png"
-              alt="TimeCam time slice preview"
-            />
+          <div className="container">
+            <BeforeAfter />
           </div>
         </section>
 
@@ -218,77 +211,63 @@ export default function HomePage() {
         </section>
 
         <section className="section">
-          <div className="container section-with-aside">
+          <div className="container">
             <div className="section-head">
               <h2>Advanced controls</h2>
               <p className="muted">Fine-tune how your time slice is generated.</p>
             </div>
-            <div className="section-content">
-              <div className="card">
-                <ul className="list">
-                  <li>Keep original people (preserve identity and pose, update clothing to match the era)</li>
-                  <li>Remove people cleanly or add era-appropriate people when none are present</li>
-                  <li>Population density controls (empty → crowded)</li>
-                  <li>Era fidelity modes (more accurate vs more creative)</li>
-                  <li>Lighting and time-of-day controls</li>
-                  <li>Building preservation options for architecture-heavy scenes</li>
-                  <li>Multiple AI photo models: Nano Banana, Nano Banana Pro, SeaDream 4.5</li>
-                </ul>
-              </div>
+            <div className="card">
+              <ul className="list">
+                <li>Keep original people (preserve identity and pose, update clothing to match the era)</li>
+                <li>Remove people cleanly or add era-appropriate people when none are present</li>
+                <li>Population density controls (empty → crowded)</li>
+                <li>Era fidelity modes (more accurate vs more creative)</li>
+                <li>Lighting and time-of-day controls</li>
+                <li>Building preservation options for architecture-heavy scenes</li>
+                <li>Multiple AI photo models: Nano Banana, Nano Banana Pro, SeaDream 4.5</li>
+              </ul>
             </div>
-            <img
-              className="section-aside"
-              src="/images/Promo3.png"
-              alt="Advanced controls preview"
-            />
           </div>
         </section>
 
         <EraTimeline />
 
         <section className="section" id="pricing">
-          <div className="container section-with-aside">
+          <div className="container">
             <div className="section-head">
               <h2>Pricing that scales with curiosity</h2>
               <p className="muted">Prices shown in-app. Subscriptions and top-ups available.</p>
             </div>
-            <div className="section-content">
-              <div className="pricing-grid">
-                <article className="card reveal">
-                  <h3>Starter</h3>
-                  <p className="price">£4.99</p>
-                  <ul className="list">
-                    <li>120 credits</li>
-                    <li>Standard rendering</li>
-                    <li>Watermark-free exports</li>
-                  </ul>
-                </article>
-                <article className="card featured reveal">
-                  <div className="badge">Most popular</div>
-                  <h3>Creator</h3>
-                  <p className="price">£9.99</p>
-                  <ul className="list">
-                    <li>400 credits</li>
-                    <li>High-resolution exports</li>
-                    <li>Priority processing</li>
-                  </ul>
-                </article>
-                <article className="card reveal">
-                  <h3>Pro</h3>
-                  <p className="price">£49.99</p>
-                  <ul className="list">
-                    <li>2,500 credits</li>
-                    <li>Batch exports</li>
-                    <li>Extended era library</li>
-                  </ul>
-                </article>
-              </div>
+            <div className="pricing-grid">
+              <article className="card reveal">
+                <h3>Starter</h3>
+                <p className="price">£4.99</p>
+                <ul className="list">
+                  <li>120 credits</li>
+                  <li>Standard rendering</li>
+                  <li>Watermark-free exports</li>
+                </ul>
+              </article>
+              <article className="card featured reveal">
+                <div className="badge">Most popular</div>
+                <h3>Creator</h3>
+                <p className="price">£9.99</p>
+                <ul className="list">
+                  <li>400 credits</li>
+                  <li>High-resolution exports</li>
+                  <li>Priority processing</li>
+                </ul>
+              </article>
+              <article className="card reveal">
+                <h3>Pro</h3>
+                <p className="price">£49.99</p>
+                <ul className="list">
+                  <li>2,500 credits</li>
+                  <li>Batch exports</li>
+                  <li>Extended era library</li>
+                </ul>
+              </article>
             </div>
-            <img
-              className="section-aside"
-              src="/images/Promo4.png"
-              alt="Pricing overview preview"
-            />
           </div>
         </section>
 
