@@ -25,6 +25,7 @@ export default function EraTimeline() {
           <div className="section-head">
             <h2>Pick an era</h2>
             <p className="muted">Tap an era or scrub the timeline to update the preview.</p>
+            <p className="muted">You can also add any date you like and TimeCam will take you back to then.</p>
           </div>
           <div className="era-chips" role="list">
             {ERAS.map((era, eraIndex) => (
