@@ -241,7 +241,7 @@ export default function HomePage() {
                 <h3>Starter</h3>
                 <p className="price">£4.99/mo</p>
                 <ul className="list">
-                  <li>120 credits per month</li>
+                  <li>150 credits per month</li>
                   <li>Standard rendering</li>
                   <li>Watermark-free exports</li>
                 </ul>
@@ -251,7 +251,7 @@ export default function HomePage() {
                 <h3>Creator</h3>
                 <p className="price">£9.99/mo</p>
                 <ul className="list">
-                  <li>400 credits per month</li>
+                  <li>500 credits per month</li>
                   <li>High-resolution exports</li>
                   <li>Priority processing</li>
                 </ul>
